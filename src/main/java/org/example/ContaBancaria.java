@@ -28,12 +28,18 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
-    public double consultarSaldo() {
-        double saldo = getSaldo();
-        return saldo;
+    public double getConsultarSaldo() {
+        double saldo = getSaldo(); //método de pegar saldo
+        return saldo; //retorna saldo atual
     }
 
-    public void depositar(double v) {
+    public void setDepositar(double valor) {
+        setSaldo(getSaldo() + valor); //recebe
     }
+
+    public void setSacar(double valor) {
+
+    }
+
 }
 
